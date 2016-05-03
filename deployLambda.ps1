@@ -45,6 +45,7 @@ function UpdateLambdaFunction ( $functionName, $bucketName, $zipFile, $region  )
 }
 
 ################### script entry point
+# usage: .\deployLambda.ps1 -sourcePath 'C:\Users\user\Documents\git\someFolder' -functionName 'someName' -accessKey 'someAK' -secretAccessKey 'SomeSAK' -region 'us-east-1' -environment 'dev'
 $fullZipPath = "$PSScriptRoot\$functionName.zip"
 $zipFile = "$functionName.zip"
 $fullZipPath = "$PSScriptRoot\$functionName.zip" 
